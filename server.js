@@ -8,6 +8,8 @@ const employersController = require('./controllers/employers.js');
 // look in views for renders
 app.set('view engine', 'ejs');
 
+app.use(express.static('public'));
+
 // basic home route - welcome page?
 app.get('/', (req, res) => {
     res.render('home')

@@ -84,15 +84,15 @@ body {
 }
 
 .input-field label {
-    color: #fff;
+    color: #000000;
 }
 
 .input-field input[type=text]:focus+label {
-    color: #fff;
+    color: #000000;
 }
 
 .input-field input[type=password]:focus+label {
-    color: #fff;
+    color: #000000;
 }
 
 .input-field input[type=text]:focus {

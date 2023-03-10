@@ -6,16 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <title>employMe</title>
 </head>
 
 <body>
-    <h1>employMe</h1>
-    <div class="background">
-        <div class="logincontainer">
-
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6 offset-m3">
+                <div class="card-panel login">
+                    <h4 class="center-align">Login</h4>
+                    <form>
+                        <div class="input-field">
+                            <input id="username" type="text">
+                            <label for="username">Username</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="password" type="password">
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="center-align">
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Login
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>

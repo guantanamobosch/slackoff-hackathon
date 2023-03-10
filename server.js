@@ -1,17 +1,25 @@
 const express = require('express');
 const app = express();
 
+const employeesController = require('./controllers/employees.js');
+const employersController = require('./controllers/employers.js');
+
+
+// look in views for renders
 app.set('view engine', 'ejs');
 
+// basic home route - welcome page?
 app.get('/', (req, res) => {
-    res.send('<h1>Hey there</h1>');
-})
-
-app.get('/home', (req, res) => {
     res.render('home')
 })
 
+// routing to the controllers for employees and employers
+app.use('/employees', employeesController);
+app.use('/employers', employersController);
 
+app.get('/*', (req, res) => {
+    res.render('404');
+})
 
 app.listen(4000, () => {
     console.log('I am listening on port 4000');

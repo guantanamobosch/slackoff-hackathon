@@ -12,7 +12,7 @@ app.use(express.static('public'));
 
 // basic home route - welcome page?
 app.get('/', (req, res) => {
-    res.render('home')
+    res.render('login')
 })
 
 // routing to the controllers for employees and employers
